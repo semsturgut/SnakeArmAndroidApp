@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ListView
+            android:id="@+id/pairedlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/inputpane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/edit_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textPos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="61dp"
+                android:ems="10"
+                android:hint="@string/servo_id"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/speak_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/edit_ID"
+                android:layout_centerHorizontal="true"
+                android:text="@string/speech2text"
+                android:visibility="visible" />
+
+            <SeekBar
+                android:id="@+id/seek_Pos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:max="1023"
+                android:progress="512"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/seek_Pos"
+                android:layout_centerHorizontal="true"
+                android:text="@string/position"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edit_Duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textPos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/duration"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/home_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_position"
+                android:layout_below="@+id/seek_Pos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp" />
+
+            <Button
+                android:id="@+id/btn_move1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_btn"
+                android:layout_centerHorizontal="true"
+                android:text="@string/movement_1" />
+
+            <Button
+                android:id="@+id/btn_move2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_move1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/movement_2" />
+
+            <Button
+                android:id="@+id/btn_beer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_move2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/beer" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

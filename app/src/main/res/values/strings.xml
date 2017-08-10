@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Snake Arm Android App</string>
+    <string name="close_claw">Close Claw</string>
+    <string name="speech2text">Speak</string>
+    <string name="position">Position</string>
+    <string name="duration">Duration</string>
+    <string name="servo_id">Servo ID</string>
+    <string name="ure_welcome">You\'re welcome..</string>
+    <string name="home_position">Home Position</string>
+    <string name="movement_1">Movement 1</string>
+    <string name="movement_2">Movement 2</string>
+    <string name="beer">Beer</string>
+</resources>
