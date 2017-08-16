@@ -10,4 +10,6 @@
     <string name="movement_1">Movement 1</string>
     <string name="movement_2">Movement 2</string>
     <string name="beer">Beer</string>
+    <string name="send">Send</string>
+    <string name="z_axis">Z Axis</string>
 </resources>
